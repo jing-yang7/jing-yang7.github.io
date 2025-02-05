@@ -1,0 +1,88 @@
+# jemdoc: menu{MENU}{group.html}, notime
+# The first line of this file is a special command that tells jemdoc which menu
+# entry in the file named MENU to associate this page with.
+= Group
+
+# == [http://wcan.ee.psu.edu Wireless Communications \& Networking Laboratory (WLAN)]
+
+== PhD Students
+~~~
+{}{img_left}{huang.jpg}{alt text}{150}{}
+Ruiquan Huang\n
+Ph.D. Student (Fall 2020 - current)\n
+M.S., Columbia University \n
+B.S., University of Science and Technology of China (USTC)\n
+/*Awards:*/ 
+Graduate School Endowed Fellowship (sole recipient of COE)\n
+Future Faculty Immersive Teaching (FIT) Fellow\n
+[https://scholar.google.com/citations?hl=zh-CN&user=0eo3JGgAAAAJ Google Scholar] \n
+~~~
+
+~~~
+{}{img_left}{uva.png}{alt text}{150}{}
+Donghao Li\n
+Ph.D. Student in ECE (Spring 2021 - current)\n
+B.S., University of Science and Technology of China (USTC)\n
+[https://scholar.google.com/citations?user=4vygbUIAAAAJ&hl=en&authuser=1 Google Scholar] \n
+~~~
+
+~~~
+{}{img_left}{liu.jpeg}{alt text}{150}{}
+Renpu Liu\n
+Ph.D. Student in ECE (Fall 2021 - current)\n
+M.S., University of Pennsylvania \n
+B.S., Nanjing University\n
+[https://scholar.google.com/citations?user=RB_fv-kAAAAJ&hl=en Google Scholar]\n
+~~~
+
+~~~
+{}{img_left}{gao.jpeg}{alt text}{150}{}
+Fengyu Gao \n
+Ph.D. Student in CS (Fall 2022 - current)\n
+B.S., University of Science and Technology of China (USTC)\n
+[https://scholar.google.com/citations?user=ppyx_LkAAAAJ&hl=en Google Scholar]\n
+~~~
+
+~~~
+{}{img_left}{wang.png}{alt text}{150}{}
+[https://peter-peng-w.github.io Peng Wang]\n
+Ph.D. Student in CS (Fall 2024 - current), Co-advised with [https://cshen317.github.io Prof. Cong Shen]\n
+M.S., University of Virginia\n 
+B.S., Tsinghua University\n
+[https://scholar.google.com/citations?user=HvK1Hp8AAAAJ&hl=en Google Scholar]\n
+
+~~~
+
+# == MS Students
+
+
+# == Visiting Scholars
+
+== Alumni
+
+- [https://scholar.google.com/citations?user=q11fVdcAAAAJ&hl=en Songtao Feng] (PhD 2022, First job: Postdoc scholar at the Ohio State University)
+- Chao Gan (PhD 2020, Senior Data Scientist at Walmart Labs, Sunnyvale, California) 
+- Boyu Wang (PhD 2019, First job: Data Scientist at Konux, Shenzhen)
+- Xianwen Wu (PhD 2016, First job: System Engineer at Qualcomm, San Diego)
+- Chih-Hsuan Sun (MS 2023)
+- Yue Zheng (MS 2023)
+- Yutong Mao (MS 2023)
+- Zixuan Tian (MS 2023)
+- Yucheng Hu (MS 2022)
+- Kangrui Han (MS 2022)
+- Tianwei Wu (MS 2022)
+- Bhanu Prakash Reddy Bujala (MS 2021)
+- Duo Cheng (MS 2021)
+- Zhongyi Wang (MS 2021)
+- Adam Leung  (MS 2020)
+- Yifan Guo  (MS 2020)
+- Zhen Dong (MS 2019)
+- Wesley Clawson (MS 2016)
+- Abderrahmane Mayouche (MS 2016)
+- Chenghao Deng (Undergraduate intern, Summer 2019, Tsinghua University)
+- Chao Wang (PhD student visitor, Summer 2019, University of Science and Technology of China)
+- Zhiyang Wang (MS student visitor, Fall 2018, University of Science and Technology of China)
+- Ruida Zhou (Undergraduate intern, Summer 2017, University of Science and Technology of China)
+
+
+

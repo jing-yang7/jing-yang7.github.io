@@ -8,7 +8,7 @@ table#tlayout {
 
 body {
 	background: white;
-	font-family: helvetica;
+	font-family: Georgia, serif;
 	padding-bottom: 8px;
 	margin: 0px;
 }
@@ -20,7 +20,7 @@ body {
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 1em;
-	color: #1D417D;
+	color: #142D57;
 	width: auto;
 	white-space: nowrap;
     text-align: left;
@@ -53,11 +53,11 @@ tt {
 
 pre, tt {
 	font-size: 90%;
-	font-family: monaco, monospace;
+	font-family: Georgia, serif;
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #005F5F;
 	text-decoration: none;
 }
 
@@ -66,18 +66,18 @@ a:hover {
 }
 
 #layout-menu a.current:link {
-	color: #FF8C00;
+	color: #005F5F;
 	border-bottom: 1px gray solid;
 }
 
 #layout-menu a.current:visited {
-	color: #FF8C00;
+	color: #005F5F;
 	border-bottom: 1px gray solid;
 }
 
 
 #layout-menu a:link, #layout-menu a:visited {
-	color: #f4ae36;
+	color: #005F5F;
 	text-decoration: none;
 }
 
@@ -127,7 +127,7 @@ strong {
 
 
 h1, h2, h3 {
-	color: #1d417d;
+	color: #142D57;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
@@ -263,7 +263,7 @@ div.codeblock, div.infoblock {
 
 div.blocktitle {
 	font-weight:bold;
-	color:  #1d417d;
+	color:  #142D57;
 	margin-top: 2em;
 	margin-bottom: 0.1em;
 }
