@@ -159,7 +159,7 @@ p {
 	margin-bottom: 0.8em;
 	padding: 0;
 	line-height: 1.3;
-	color: #666666;
+	color: #000000;
 }
 
 pre {
@@ -207,7 +207,7 @@ dl {
 }
 
 dd {
-	color: #222222;
+	color: #000000;
 }
 
 dd > *:first-child {
@@ -230,7 +230,7 @@ li ul, li ol {
 ol {
 	list-style-position: outside;
 	list-style-type: decimal;
-	color: #666666;
+	color: #000000;
 }
 
 ul p, dd p {
@@ -243,12 +243,12 @@ ol p, dd p {
 
 ol ol {
 	list-style-type: lower-alpha;
-	color: #666666;
+	color: #000000;
 }
 
 ol ol ol {
 	list-style-type: lower-roman;
-	color: #666666;
+	color: #000000;
 }
 
 p + div.codeblock {
