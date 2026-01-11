@@ -1,0 +1,20 @@
+{#menuimage}    [uva.png]
+
+Jing Yang
+    Home                [index.html]
+    Service             [service.html]
+
+Publication
+    Preprints           [preprint.html]
+    Book Chapters       [book.html]
+    Journal		[journal.html]
+    Conference          [conference.html]
+    Theses              [theses.html]
+
+Research
+    Projects            [research.html]
+    Group               [group.html]
+
+Teaching
+    Current Course     [current.html]
+    Past Courses        [past.html]
