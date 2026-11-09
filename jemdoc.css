@@ -389,3 +389,20 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+/* Subtle emphasis for homepage research-interest labels. */
+.research-topic {
+    color: #142D57;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Keep each interest on one line without widening the page on small screens. */
+#layout-content ul:has(.research-topic) {
+    contain: inline-size;
+    overflow-x: auto;
+}
+
+#layout-content li > p:has(> .research-topic) {
+    white-space: nowrap;
+}
