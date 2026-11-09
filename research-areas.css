@@ -1,0 +1,34 @@
+/* Typography, navigation, headings, and lists use the shared jemdoc.css.
+   Research diagrams and section spacing have page-specific adjustments. */
+.research-area + .research-area {
+    padding-top: 2em;
+}
+
+.research-area > p:has(+ .paper-figure) {
+    margin-bottom: 0.2em;
+}
+
+.paper-figure {
+    margin: 0.2em 0 1em;
+}
+
+.paper-figure .figure-link {
+    display: block;
+    max-width: 760px;
+}
+
+.paper-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.paper-figure figcaption {
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.figure-link:hover { border-bottom: none; }

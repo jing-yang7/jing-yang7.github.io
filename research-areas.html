@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Jing Yang's research in LLM post-training for reasoning and alignment, efficient LLM inference and agentic AI, foundations of AI/ML, privacy-preserving machine learning, and AI for wireless networks and emerging applications." />
+<meta name="generator" content="jemdoc" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="research-areas.css" type="text/css" />
+<title>Research Overview</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-image"><img src="uva.png" alt="University of Virginia" /></div>
+<div class="menu-category">Jing Yang</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="service.html">Service</a></div>
+<div class="menu-category">Publication</div>
+<div class="menu-item"><a href="book.html">Book&nbsp;Chapters</a></div>
+<div class="menu-item"><a href="journal.html">Journal</a></div>
+<div class="menu-item"><a href="conference.html">Conference</a></div>
+<div class="menu-item"><a href="theses.html">Theses</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="research-areas.html" class="current">Overview</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-category">Teaching</div>
+<div class="menu-item"><a href="current.html">Current&nbsp;Course</a></div>
+<div class="menu-item"><a href="past.html">Past&nbsp;Courses</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Research Overview</h1>
+</div>
+<div class="research-overview">
+<p class="research-intro">Our research spans LLM post-training and inference, foundations of AI/ML, privacy-preserving machine learning, and AI for wireless networks and emerging applications. We connect theoretical guarantees with algorithms that work under data, computation, communication, and privacy constraints.</p>
+<nav aria-label="Research areas">
+<ul>
+<li><p><a href="#post-training">LLM post-training for reasoning and alignment</a></p></li>
+<li><p><a href="#inference">Efficient LLM inference and agentic AI</a></p></li>
+<li><p><a href="#foundations">Foundations of AI/ML</a></p></li>
+<li><p><a href="#privacy">Privacy-preserving machine learning</a></p></li>
+<li><p><a href="#wireless">AI for wireless networks and emerging applications</a></p></li>
+</ul>
+</nav>
+<section class="research-area" id="post-training" aria-labelledby="rl-title">
+<h2 id="rl-title">LLM post-training for reasoning and alignment</h2>
+<p class="research-question">Reinforcement learning from human feedback (RLHF), policy optimization, and personalized alignment.</p>
+<p>We study how post-training can improve language-model reasoning and align model behavior with human preferences. Our work covers policy optimization, the statistical foundations of learning from preference feedback, and adaptation to the different needs of individual users.
+</p>
+<figure class="paper-figure">
+<a class="figure-link" href="assets/research/illustrations/post-training-light.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/post-training-light.webp" width="1774" height="887" alt="A circular policy-update loop surrounds a model core, with worked reasoning examples and human feedback flowing in and personalized responses branching toward two users." /></a>
+<figcaption><strong>From feedback to better-aligned policies.</strong> Reasoning and preference feedback drive policy improvement and personalized responses.</figcaption>
+</figure>
+<h3>Recent results</h3>
+<ul>
+<li><p><b>Greedy sampling for RLHF.</b> Under the studied KL-regularized preference-learning objectives, direct empirical estimates yield strong performance guarantees without optimism or pessimism bonuses. Experiments illustrate similar convergence rates, with differences in cumulative regret.
+</p>
+</li>
+<li><p><b>Personalized alignment.</b> Shared low-rank adaptation learns common structure across users&rsquo; reward models while retaining individual differences. The method comes with sample-complexity guarantees and is evaluated on real-world preference datasets.
+</p>
+</li>
+</ul>
+<div class="selected-papers">
+<h3>Selected papers</h3>
+<ul>
+<li><p>Skill-Coupled Policy Optimization with Calibrated Group-Wise Advantage Estimation<br />
+P. Wang, Z. Chu, C. Shi, M. Poloczek, C. Shen and J. Yang. <i>NeurIPS 2026</i>, accepted.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2510.24700" target="blank">Greedy Sampling Is Provably Efficient for RLHF</a><br />
+D. Wu, C. Shi, J. Yang and C. Shen. <i>NeurIPS 2025</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2503.19201" target="blank">A Shared Low-Rank Adaptation Approach to Personalized RLHF</a><br />
+R. Liu, P. Wang, D. Li, C. Shen and J. Yang. <i>AISTATS 2025</i>.
+</p>
+</li>
+</ul>
+</div>
+</section>
+<section class="research-area" id="inference" aria-labelledby="inference-title">
+<h2 id="inference-title">Efficient LLM inference and agentic AI</h2>
+<p class="research-question">Prompt and agent harness optimization, evaluation, and cost-aware resource allocation.</p>
+<p>We study how to obtain useful behavior from language models within limited evaluation and inference budgets. Our interests include selecting prompts, optimizing the surrounding agent harness, evaluating competing configurations, and allocating resources across quality, cost, and other objectives.
+</p>
+<figure class="paper-figure">
+<a class="figure-link" href="assets/research/illustrations/agentic-ai-light.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/agentic-ai-light.webp" width="1774" height="887" loading="lazy" alt="An LLM agent receives a goal, plans and calls search, code, and data tools. Observations return to the agent to revise its plan, and a separate exit leads to a checked result." /></a>
+<figcaption><strong>Agents act, observe, and revise.</strong> An agent pursues a goal by choosing tools, incorporating their results, and revising its plan before checking the outcome.</figcaption>
+</figure>
+<h3>Recent results</h3>
+<ul>
+<li><p><b>Multi-objective prompt selection.</b> A pure-exploration bandit formulation addresses both recovering a Pareto set of prompts and identifying the best prompt that satisfies constraints. The structured-bandit method provides identification-error guarantees in the linear setting.
+</p>
+</li>
+<li><p><b>Evaluation under a fixed budget.</b> TRIPLE connects prompt selection to fixed-budget best-arm identification, allocating a limited evaluation budget to find strong prompts. Experiments also examine efficient example selection for few-shot prompting.
+</p>
+</li>
+</ul>
+<div class="selected-papers">
+<h3>Selected papers</h3>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2605.14553" target="blank">Efficient Multi-objective Prompt Optimization via Pure-exploration Bandits</a><br />
+D. Li, C. Shi, W. Ou, C. Shen and J. Yang. <i>ICLR 2026</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2402.09723" target="blank">Efficient Prompt Optimization Through the Lens of Best Arm Identification</a><br />
+C. Shi, K. Yang, Z. Chen, J. Li, J. Yang and C. Shen. <i>NeurIPS 2024</i>.
+</p>
+</li>
+</ul>
+</div>
+</section>
+<section class="research-area" id="foundations" aria-labelledby="transformers-title">
+<h2 id="transformers-title">Foundations of AI/ML</h2>
+<p class="research-question">Transformers and in-context learning; bandits, constrained decision-making, and sample-efficient reinforcement learning.</p>
+<p>We seek mathematical explanations for learning and decision-making. We analyze how transformers acquire capabilities, how bandit algorithms allocate limited observations, and how reinforcement learning can balance exploration, constraints, sample efficiency, and computation.
+</p>
+<figure class="paper-figure">
+<a class="figure-link" href="assets/research/illustrations/foundations-attention-bottom.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/foundations-attention-bottom.webp" width="1774" height="887" loading="lazy" alt="Context tokens pass through attention layers to a prediction. Beside them, a reinforcement-learning agent takes actions in a grid-world environment and receives a reward and next state to guide subsequent decisions." /></a>
+<figcaption><strong>Understand the mechanisms behind learning.</strong> Study how transformers use context and how reinforcement-learning agents improve decisions through interaction and reward feedback.</figcaption>
+</figure>
+<h3>Recent results</h3>
+<ul>
+<li><p><b>Learning from unlabeled context.</b> In a multi-class linear classification setting, a transformer with chain-of-thought prompting can emulate expectation-maximization and use unlabeled inputs to improve in-context prediction. The analysis also establishes convergence under teacher-forcing training.
+</p>
+</li>
+<li><p><b>Understanding training dynamics.</b> For the regular-language tasks studied, joint training of attention and a linear layer follows two phases: attention first separates representations, then the linear layer approaches a max-margin direction. Chain-of-thought enables the parity-check task.
+</p>
+</li>
+<li><p><b>Efficient actor-critic learning.</b> In low-rank Markov decision processes, an optimistic actor-critic method improves sample-complexity guarantees using a policy-evaluation oracle, avoiding more demanding planning oracles under the paper's computational assumptions.
+</p>
+</li>
+<li><p><b>Exploration under constraints.</b> In tabular episodic MDPs, StepMix combines a safe baseline with an optimistic policy to satisfy episode-wise performance constraints with high probability while retaining near-optimal regret order.
+</p>
+</li>
+</ul>
+<div class="selected-papers">
+<h3>Selected papers</h3>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2601.10058" target="blank">Unlabeled Data Can Provably Enhance In-Context Learning of Transformers</a><br />
+R. Liu and J. Yang. <i>NeurIPS 2025</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2505.00926" target="blank">How Transformers Learn Regular Language Recognition: A Theoretical Study on Training Dynamics and Implicit Bias</a><br />
+R. Huang, Y. Liang and J. Yang. <i>ICML 2025</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2605.01242" target="blank">Breaking the Computational Barrier: Provably Efficient Actor-Critic for Low-Rank MDPs</a><br />
+R. Huang, D. Li, Y. Liang and J. Yang. <i>ICML 2026</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2306.06265" target="blank">Near-optimal Conservative Exploration in Reinforcement Learning under Episode-wise Constraints</a><br />
+D. Li*, R. Huang*, C. Shen and J. Yang. <i>ICML 2023</i>. (* Equal contribution)
+</p>
+</li>
+</ul>
+</div>
+</section>
+<section class="research-area" id="privacy" aria-labelledby="privacy-title">
+<h2 id="privacy-title">Privacy-preserving machine learning</h2>
+<p class="research-question">Differential privacy, federated and decentralized learning, and privacy-preserving data synthesis.</p>
+<p>We study differential privacy alongside federated and decentralized learning, with an emphasis on protecting sensitive information while maintaining useful model performance. Our work includes private preference data for LLM alignment, synthetic prompts, and tabular data synthesis across participants with heterogeneous data.
+</p>
+<figure class="paper-figure">
+<a class="figure-link" href="assets/research/illustrations/privacy-light-spaced.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/privacy-light-spaced.webp" width="1774" height="887" loading="lazy" alt="Records remain with separate data holders while contribution streams enter a noise-calibrated computation at a privacy boundary; synthetic data and a DP-trained model emerge on the other side." /></a>
+<figcaption><strong>Learn useful patterns while protecting individuals.</strong> Calibrated noise and privacy accounting support useful models and synthetic data.</figcaption>
+</figure>
+<h3>Recent results</h3>
+<ul>
+<li><p><b>Private preference data for alignment.</b> DPPrefSyn learns differentially private reward models from sensitive human feedback, then uses public prompts to generate synthetic preference data. Its design captures heterogeneous preferences while supporting downstream alignment.
+</p>
+</li>
+<li><p><b>Private synthesis across heterogeneous participants.</b> HeteroFedSyn selects and estimates informative marginal statistics in a federated setting. In the reported experiments, its synthetic data achieves utility comparable to centralized synthesis across query, fidelity, and machine-learning evaluations.
+</p>
+</li>
+</ul>
+<div class="selected-papers">
+<h3>Selected papers</h3>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2605.30808" target="blank">Differentially Private Preference Data Synthesis for Large Language Model Alignment</a><br />
+F. Gao and J. Yang. <i>ICML 2026</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2603.08832" target="blank">HeteroFedSyn: Differentially Private Tabular Data Synthesis for Heterogeneous Federated Settings</a><br />
+X. Li, F. Gao, X. Wei, T. Wang, C. Shen and J. Yang. <i>SIGMOD 2026</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2410.12085" target="blank">Data-adaptive Differentially Private Prompt Synthesis for In-Context Learning</a><br />
+F. Gao, R. Zhou, T. Wang, C. Shen and J. Yang. <i>ICLR 2025</i>.
+</p>
+</li>
+</ul>
+</div>
+</section>
+<section class="research-area" id="wireless" aria-labelledby="wireless-title">
+<h2 id="wireless-title">AI for wireless networks and emerging applications</h2>
+<p class="research-question">Machine learning for wireless communications and networking, edge intelligence, and data-driven applications.</p>
+<p>We bring learning algorithms to wireless receivers and distributed edge systems, and use communication-system structure to make learning more efficient. We study how to divide computation, exploit context, and adapt models to resource-constrained settings.
+</p>
+<figure class="paper-figure">
+<a class="figure-link" href="assets/research/illustrations/wireless-light.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/wireless-light.webp" width="1774" height="887" loading="lazy" alt="A connected urban scene links a surveying drone, sensors, a mobile user, a first responder, and an edge-computing station, with an adaptive route around a damaged road." /></a>
+<figcaption><strong>Bring intelligence closer to the physical world.</strong> Coordinate sensing, communication, and edge computing as conditions change.</figcaption>
+</figure>
+<h3>Recent results</h3>
+<ul>
+<li><p><b>Lighter client-side training.</b> HERON-SFL combines gradient-free client updates with first-order server training. In the reported ResNet and language-model experiments, it matches benchmark accuracy while reducing client peak memory by up to 64% and per-step computation by up to 33%.
+</p>
+</li>
+<li><p><b>Reasoning with shallow receivers.</b> CHOOSE adds latent chain-of-thought steps to one- or two-layer transformers for wireless symbol detection. Experiments show detection performance comparable to deeper models with fewer parameters.
+</p>
+</li>
+</ul>
+<div class="selected-papers">
+<h3>Selected papers</h3>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2601.09076" target="blank">Lean Clients, Full Accuracy: Hybrid Zeroth- and First-Order Split Federated Learning</a><br />
+Z. Kou, Z. Chen, J. Yang and C. Shen. <i>IEEE Journal on Selected Areas in Communications</i>, accepted.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2506.21093" target="blank">Chain-of-Thought Enhanced Shallow Transformers for Wireless Symbol Detection</a><br />
+L. Fan, P. Wang, J. Yang and C. Shen. <i>IEEE GLOBECOM 2025</i>.
+</p>
+</li>
+</ul>
+</div>
+<aside class="research-project" aria-label="Related collaborative project">
+<p><strong>From algorithms to disaster response.</strong> Through <a href="https://engineering.purdue.edu/HEIDRA">HEIDRA</a>, an NSF VINES Track 2 collaboration led by Purdue, we are part of a team developing edge intelligence and resilient networks to help first responders access critical information during disasters.</p>
+</aside>
+</section>
+</div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2026-11-08, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
