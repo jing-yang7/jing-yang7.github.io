@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Jing Yang's research in LLM post-training for reasoning and alignment, efficient LLM inference and agentic AI, foundations of AI/ML, privacy-preserving machine learning, and AI for wireless networks and emerging applications." />
+<meta name="description" content="Jing Yang's research in foundations of AI/ML, LLM post-training for reasoning and alignment, efficient LLM inference and agentic AI, privacy-preserving machine learning, and AI for wireless networks and emerging applications." />
 <meta name="generator" content="jemdoc" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <link rel="stylesheet" href="research-areas.css" type="text/css" />
@@ -34,23 +34,89 @@
 <h1>Research Overview</h1>
 </div>
 <div class="research-overview">
-<p class="research-intro">Our research spans LLM post-training and inference, foundations of AI/ML, privacy-preserving machine learning, and AI for wireless networks and emerging applications. We connect theoretical guarantees with algorithms that work under data, computation, communication, and privacy constraints.</p>
+<p class="research-intro">Our research spans foundations of AI/ML, LLM post-training and inference, privacy-preserving machine learning, and AI for wireless networks and emerging applications. We connect theoretical foundations with practical algorithms for learning and decision-making, advancing efficiency, generalization, robustness, safety, and privacy.</p>
 <nav aria-label="Research areas">
 <ul>
+<li><p><a href="#foundations">Foundations of AI/ML</a></p></li>
 <li><p><a href="#post-training">LLM post-training for reasoning and alignment</a></p></li>
 <li><p><a href="#inference">Efficient LLM inference and agentic AI</a></p></li>
-<li><p><a href="#foundations">Foundations of AI/ML</a></p></li>
 <li><p><a href="#privacy">Privacy-preserving machine learning</a></p></li>
 <li><p><a href="#wireless">AI for wireless networks and emerging applications</a></p></li>
 </ul>
 </nav>
+<section class="research-area" id="foundations" aria-labelledby="transformers-title">
+<h2 id="transformers-title">Foundations of AI/ML</h2>
+<p class="research-question">Transformer training dynamics, generalization, and in-context learning; bandits, constrained decision-making, and sample-efficient reinforcement learning.</p>
+<p>We seek mathematical explanations for learning and decision-making. We study how transformer representations and capabilities evolve during training and generalize to new examples and tasks, including in-context learning. We also analyze how bandit and reinforcement-learning algorithms balance exploration, constraints, sample efficiency, and computation.
+</p>
+<figure class="paper-figure">
+<a class="figure-link" href="assets/research/illustrations/foundations-training-generalization.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/foundations-training-generalization.webp" width="1774" height="887" alt="Training examples feed a transformer, a feedback loop depicts training dynamics, and predictions on new examples illustrate generalization. Beside it, a reinforcement-learning agent takes actions in a grid-world environment and receives a reward and next state." /></a>
+<figcaption><strong>Understand the mechanisms behind learning.</strong> Study transformer training dynamics and generalization, alongside reinforcement learning through interaction and reward feedback.</figcaption>
+</figure>
+<h3>Recent results</h3>
+<ul>
+<li><p><b>Transformer training and generalization.</b> We study how transformers learn from sequential data, spanning next-token prediction and language recognition. Our work connects training dynamics, learned representations, and generalization to explain how predictive and reasoning capabilities emerge through training.
+</p>
+</li>
+<li><p><b>Foundations of in-context learning.</b> We investigate how transformers learn from context without updating their parameters, across classification, sparse recovery, and game-playing. Our work examines how training, context length, task structure, and unlabeled examples shape their ability to adapt to new tasks.
+</p>
+</li>
+<li><p><b>Sample- and computation-efficient reinforcement learning.</b> We study how agents can learn effective policies with fewer interactions and less computation. Our work spans exploration, reward-free learning, multitask representation learning, and combining offline data with online interaction, identifying how shared structure and prior data can make learning more efficient.
+</p>
+</li>
+<li><p><b>Safe, robust, and constrained reinforcement learning.</b> We study how agents can learn reliably while respecting safety and performance constraints, handling uncertainty in data and models, and adapting to changing environments. Our work spans safe exploration, constrained policy learning, robust offline RL, and nonstationary decision-making, examining the tradeoffs among reliability, adaptability, and learning efficiency.
+</p>
+</li>
+</ul>
+<div class="selected-papers">
+<h3>Selected papers</h3>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2601.10058" target="blank">Unlabeled Data Can Provably Enhance In-Context Learning of Transformers</a><br />
+R. Liu and J. Yang. <i>NeurIPS 2025</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2505.00926" target="blank">How Transformers Learn Regular Language Recognition: A Theoretical Study on Training Dynamics and Implicit Bias</a><br />
+R. Huang, Y. Liang and J. Yang. <i>ICML 2025</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2409.17335" target="blank">Non-asymptotic Convergence of Training Transformers for Next-token Prediction</a><br />
+R. Huang, Y. Liang and J. Yang. <i>NeurIPS 2024</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2410.13981" target="blank">On the Learn-to-Optimize Capabilities of Transformers in In-Context Sparse Recovery</a><br />
+R. Liu, R. Zhou, C. Shen and J. Yang. <i>ICLR 2025</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2605.01242" target="blank">Breaking the Computational Barrier: Provably Efficient Actor-Critic for Low-Rank MDPs</a><br />
+R. Huang, D. Li, Y. Liang and J. Yang. <i>ICML 2026</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2505.13768" target="blank">Augmenting Online RL with Offline Data is All You Need: A Unified Hybrid RL Algorithm Design and Analysis</a><br />
+R. Huang*, D. Li*, C. Shi, C. Shen and J. Yang. <i>UAI 2025</i>. (* Equal contribution)
+</p>
+</li>
+<li><p><a href="https://doi.org/10.1109/TIT.2025.3587509" target="blank">Robust Offline Reinforcement Learning for Non-Markovian Decision Processes</a><br />
+R. Huang, Y. Liang and J. Yang. <i>IEEE Transactions on Information Theory, 2025</i>.
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2306.06265" target="blank">Near-optimal Conservative Exploration in Reinforcement Learning under Episode-wise Constraints</a><br />
+D. Li*, R. Huang*, C. Shen and J. Yang. <i>ICML 2023</i>. (* Equal contribution)
+</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2206.14057" target="blank">Safe Exploration Incurs Nearly No Additional Sample Complexity for Reward-free RL</a><br />
+R. Huang, J. Yang and Y. Liang. <i>ICLR 2023</i>.
+</p>
+</li>
+</ul>
+</div>
+</section>
 <section class="research-area" id="post-training" aria-labelledby="rl-title">
 <h2 id="rl-title">LLM post-training for reasoning and alignment</h2>
 <p class="research-question">Reinforcement learning from human feedback (RLHF), policy optimization, and personalized alignment.</p>
 <p>We study how post-training can improve language-model reasoning and align model behavior with human preferences. Our work covers policy optimization, the statistical foundations of learning from preference feedback, and adaptation to the different needs of individual users.
 </p>
 <figure class="paper-figure">
-<a class="figure-link" href="assets/research/illustrations/post-training-light.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/post-training-light.webp" width="1774" height="887" alt="A circular policy-update loop surrounds a model core, with worked reasoning examples and human feedback flowing in and personalized responses branching toward two users." /></a>
+<a class="figure-link" href="assets/research/illustrations/post-training-light.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/post-training-light.webp" width="1774" height="887" loading="lazy" alt="A circular policy-update loop surrounds a model core, with worked reasoning examples and human feedback flowing in and personalized responses branching toward two users." /></a>
 <figcaption><strong>From feedback to better-aligned policies.</strong> Reasoning and preference feedback drive policy improvement and personalized responses.</figcaption>
 </figure>
 <h3>Recent results</h3>
@@ -115,60 +181,14 @@ C. Shi, K. Yang, Z. Chen, J. Li, J. Yang and C. Shen. <i>NeurIPS 2024</i>.
 </ul>
 </div>
 </section>
-<section class="research-area" id="foundations" aria-labelledby="transformers-title">
-<h2 id="transformers-title">Foundations of AI/ML</h2>
-<p class="research-question">Transformers and in-context learning; bandits, constrained decision-making, and sample-efficient reinforcement learning.</p>
-<p>We seek mathematical explanations for learning and decision-making. We analyze how transformers acquire capabilities, how bandit algorithms allocate limited observations, and how reinforcement learning can balance exploration, constraints, sample efficiency, and computation.
-</p>
-<figure class="paper-figure">
-<a class="figure-link" href="assets/research/illustrations/foundations-attention-bottom.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/foundations-attention-bottom.webp" width="1774" height="887" loading="lazy" alt="Context tokens pass through attention layers to a prediction. Beside them, a reinforcement-learning agent takes actions in a grid-world environment and receives a reward and next state to guide subsequent decisions." /></a>
-<figcaption><strong>Understand the mechanisms behind learning.</strong> Study how transformers use context and how reinforcement-learning agents improve decisions through interaction and reward feedback.</figcaption>
-</figure>
-<h3>Recent results</h3>
-<ul>
-<li><p><b>Learning from unlabeled context.</b> In a multi-class linear classification setting, a transformer with chain-of-thought prompting can emulate expectation-maximization and use unlabeled inputs to improve in-context prediction. The analysis also establishes convergence under teacher-forcing training.
-</p>
-</li>
-<li><p><b>Understanding training dynamics.</b> For the regular-language tasks studied, joint training of attention and a linear layer follows two phases: attention first separates representations, then the linear layer approaches a max-margin direction. Chain-of-thought enables the parity-check task.
-</p>
-</li>
-<li><p><b>Efficient actor-critic learning.</b> In low-rank Markov decision processes, an optimistic actor-critic method improves sample-complexity guarantees using a policy-evaluation oracle, avoiding more demanding planning oracles under the paper's computational assumptions.
-</p>
-</li>
-<li><p><b>Exploration under constraints.</b> In tabular episodic MDPs, StepMix combines a safe baseline with an optimistic policy to satisfy episode-wise performance constraints with high probability while retaining near-optimal regret order.
-</p>
-</li>
-</ul>
-<div class="selected-papers">
-<h3>Selected papers</h3>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2601.10058" target="blank">Unlabeled Data Can Provably Enhance In-Context Learning of Transformers</a><br />
-R. Liu and J. Yang. <i>NeurIPS 2025</i>.
-</p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2505.00926" target="blank">How Transformers Learn Regular Language Recognition: A Theoretical Study on Training Dynamics and Implicit Bias</a><br />
-R. Huang, Y. Liang and J. Yang. <i>ICML 2025</i>.
-</p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2605.01242" target="blank">Breaking the Computational Barrier: Provably Efficient Actor-Critic for Low-Rank MDPs</a><br />
-R. Huang, D. Li, Y. Liang and J. Yang. <i>ICML 2026</i>.
-</p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2306.06265" target="blank">Near-optimal Conservative Exploration in Reinforcement Learning under Episode-wise Constraints</a><br />
-D. Li*, R. Huang*, C. Shen and J. Yang. <i>ICML 2023</i>. (* Equal contribution)
-</p>
-</li>
-</ul>
-</div>
-</section>
 <section class="research-area" id="privacy" aria-labelledby="privacy-title">
 <h2 id="privacy-title">Privacy-preserving machine learning</h2>
-<p class="research-question">Differential privacy, federated and decentralized learning, and privacy-preserving data synthesis.</p>
-<p>We study differential privacy alongside federated and decentralized learning, with an emphasis on protecting sensitive information while maintaining useful model performance. Our work includes private preference data for LLM alignment, synthetic prompts, and tabular data synthesis across participants with heterogeneous data.
+<p class="research-question">Differential privacy for LLMs, private data synthesis, and federated and decentralized learning.</p>
+<p>We develop privacy-preserving methods for LLM alignment and in-context learning, as well as federated and decentralized learning. Our work includes differentially private preference and prompt synthesis, and tabular data synthesis across participants with heterogeneous data.
 </p>
 <figure class="paper-figure">
-<a class="figure-link" href="assets/research/illustrations/privacy-light-spaced.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/privacy-light-spaced.webp" width="1774" height="887" loading="lazy" alt="Records remain with separate data holders while contribution streams enter a noise-calibrated computation at a privacy boundary; synthetic data and a DP-trained model emerge on the other side." /></a>
-<figcaption><strong>Learn useful patterns while protecting individuals.</strong> Calibrated noise and privacy accounting support useful models and synthetic data.</figcaption>
+<a class="figure-link" href="assets/research/illustrations/privacy-llm.png" aria-label="Open the full-size research illustration"><img src="assets/research/illustrations/privacy-llm.webp" width="1774" height="887" loading="lazy" alt="Sensitive prompts, preferences, and tabular records enter a computation with calibrated noise and a privacy budget; outputs include synthetic text and records, and differentially private models including LLMs." /></a>
+<figcaption><strong>Privacy for LLMs and beyond.</strong> Differential privacy supports prompt and preference synthesis, LLM alignment, and learning from sensitive tabular data.</figcaption>
 </figure>
 <h3>Recent results</h3>
 <ul>
@@ -235,7 +255,7 @@ L. Fan, P. Wang, J. Yang and C. Shen. <i>IEEE GLOBECOM 2025</i>.
 </div>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-11-08, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-11-09, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>
